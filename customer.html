@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+    <? php include 'customer.php' ?>
+    <h1>Please fill your details</h1>
+    <div class="pop">
+        <form class="top">
+            <label for="fname">FULL NAME</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Full Name"><br>
+            <label for="lname">VEHICLE NUMBER</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Vehicle number">
+            <label for="contact">CONTACT NUMBER</label><br>
+            <input type="text" id="contact" name="lname" placeholder="Contact number">
+            
+        </form>
+        <form action="/action_page.php">
+            <label for="bookingtime">FROM</label>
+            <input type="datetime-local" id="bookingtime" name="bookingtime" placeholder="bookingtime">
+            <label for="bookingtime1">TO</label>
+            <input type="datetime-local" id="bookingtime1" name="bookingtime1" placeholder="bookingtime1">
+            
+        </form>
+        <div class="button-container">
+            <button class="button2">Book Now</button>
+            <a target="_blank" href="login.html"><button class="button1">Cancel</button></a>
+            
+            
+        </div>
+        
+        
+
+    </div>
+    <div id="message-container">
+        <p id="message"></p>
+    </div>
+    <script src="customer.js" charset="utf-8"></script>
+    
+</body>
+</html>
